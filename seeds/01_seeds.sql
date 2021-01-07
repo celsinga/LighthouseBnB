@@ -8,12 +8,13 @@ VALUES (1, 'Gibsons Beachhouse', 'Nice stay on the beach', 'https://gibsons.ca/w
 (2, 'Vancouver Penthouse', 'Luxury stay in Vancouver', 'https://vancouver.ca/images/cov/feature/about-vancouver-landing-size.jpg', 'https://vancouver.ca/images/cov/feature/about-vancouver-landing-size.jpg', 450, 2, 2, 3, 'Canada', 'Pender', 'Vancouver', 'BC', 'V6A2T5', TRUE),
 (3, 'Mexico Villa', 'Close to beach', 'https://villas.journeymexico.com/wp/wp-content/uploads/villa-mandarina-9.jpg', 'https://villas.journeymexico.com/wp/wp-content/uploads/villa-mandarina-9.jpg', 280, 5, 4, 6, 'Mexico', 'Vala', 'Puerto Vallarta', 'Jalisco', '52345', TRUE);
 
-INSERT INTO reservations (start_date, end_date, property_id, guest_id)
-VALUES ('2018-09-11', '2018-09-26', 1, 1),
-('2020-04-18', '2020-05-16', 2, 2),
-('2020-10-06', '2020-10-16', 3, 3);
+INSERT INTO reservations (id, guest_id, property_id, start_date, end_date)
+VALUES (1, 1, 1, '2018-09-11', '2018-09-26'),
+(2, 2, 2, '2020-04-18', '2020-05-16'),
+(3, 3, 3, '2020-10-06', '2020-10-16');
 
 INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message) 
 VALUES (1, 1, 1, 3, 'Was not what I expected'),
 (2, 2, 2, 4, 'Thanks!'),
 (3, 3, 3, 5, 'Was great!');
+
